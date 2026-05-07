@@ -4,15 +4,15 @@
  */
 
 import { motion, useScroll, useTransform, AnimatePresence, useMotionValueEvent } from 'motion/react';
-import { 
-  ArrowRight, 
-  Users, 
-  Video, 
-  Sparkles, 
-  Award, 
-  Zap, 
-  ShieldCheck, 
-  TrendingUp, 
+import {
+  ArrowRight,
+  Users,
+  Video,
+  Sparkles,
+  Award,
+  Zap,
+  ShieldCheck,
+  TrendingUp,
   Target,
   Instagram,
   Linkedin,
@@ -46,7 +46,7 @@ const JOURNAL_POSTS = [
 
       The rise of "New Nollywood" has been characterized by a more tech-savvy generation of filmmakers who prioritize cinematography, sound design, and complex character development. This shift is not just about aesthetics; it's about making our stories universally resonant while maintaining their cultural DNA.
     `,
-    image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1000&auto=format&fit=crop'
+    image: '/assets/news1.jpg'
   },
   {
     id: 'lagos-lights',
@@ -62,7 +62,7 @@ const JOURNAL_POSTS = [
 
       The challenges were numerous—managing light in high-density areas, coordinating large casts in public spaces—but the synergy between our talent and production crew delivered a campaign that is already being hailed as a benchmark for creative advertising in the region.
     `,
-    image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=1000&auto=format&fit=crop'
+    image: '/assets/news2.jpg'
   },
   {
     id: 'new-talent',
@@ -80,7 +80,7 @@ const JOURNAL_POSTS = [
 
       At Altior, we don't just represent talent; we curate careers. Our onboarding process for these new signings involves a deep-dive career strategy, brand positioning, and immediate integration into our network of production partners.
     `,
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000&auto=format&fit=crop'
+    image: '/assets/news3.jpg'
   }
 ];
 
@@ -91,7 +91,7 @@ const SERVICES = [
     title: 'Talent Management',
     description: 'We represent and develop actors and creative talents, guiding their careers strategically.',
     tasks: ['Talent representation', 'Career strategy & development', 'Contract negotiation', 'Talent placement & casting', 'Brand partnerships'],
-    image: 'https://images.unsplash.com/photo-1531384441138-2736e62e0919?q=80&w=1000&auto=format&fit=crop' // Black model portrait
+    image: '/assets/service-talent.jpg' // Black model portrait
   },
   {
     id: 'creative',
@@ -99,7 +99,7 @@ const SERVICES = [
     title: 'Creative & Advertising',
     description: 'Full-scale creative solutions for brands, companies, and organizations.',
     tasks: ['Creative concept development', 'Advertising campaign strategy', 'Scriptwriting and storytelling', 'Brand identity and messaging'],
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000&auto=format&fit=crop' // Diverse team collab
+    image: '/assets/news3.jpg' // Diverse team collab
   },
   {
     id: 'production',
@@ -107,7 +107,7 @@ const SERVICES = [
     title: 'Production Services',
     description: 'Complete production process from concept to delivery.',
     tasks: ['Commercial and advertisement production', 'Video production (digital & broadcast)', 'Casting and talent sourcing', 'Directing and cinematography', 'Post-production'],
-    image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=1000&auto=format&fit=crop' // Film set
+    image: '/assets/news2.jpg' // Film set
   }
 ];
 
@@ -126,7 +126,7 @@ const TALENTS = [
     bio: "A seasoned actress with over a decade of experience across performance, production, and creative leadership, she brings depth, precision, and commanding presence to every role. Naturally versatile, she seamlessly embodies characters ranging from strong maternal figures to complex modern women, delivering performances that are both authentic and compelling.",
     extra: "Beyond acting, her background as a producer and entrepreneur gives her a unique understanding of storytelling, execution, and on-set excellence.",
     careerDetails: "Throughout her illustrious career, Stephnora has headlined major Nollywood blockbusters and received critical acclaim for her nuanced portrayals. She has worked with top-tier directors and has been instrumental in the strategic development of numerous rising stars through the Altior network. Her expertise extends into film financing and distribution logistics, making her a true powerhouse in the industry.",
-    image: "https://images.unsplash.com/photo-1548142813-c348350df52b?q=80&w=1000&auto=format&fit=crop"
+    image: "/assets/steph.jpg"
   },
   {
     name: "Charisma Dauda",
@@ -134,28 +134,28 @@ const TALENTS = [
     bio: "A striking and dynamic performer with a distinct Afrocentric presence, she is known for her emotional depth and transformative range. Her strength lies in bringing to life stories rooted in African identity, culture, and lived realities, delivering performances that are both powerful and deeply resonant.",
     extra: "With a natural ability to adapt across roles, she continues to stand out as a bold and authentic voice in contemporary storytelling.",
     careerDetails: "Charisma's stage presence has captivated audiences across international film festivals. She is a dedicated advocate for Afro-centric narratives and has collaborated with global fashion houses to bridge the gap between cinema and high-fashion aesthetics. Her training in traditional African dance and contemporary theatre allows her to bring a unique physical language to her cinematic performances.",
-    image: "https://images.unsplash.com/photo-1509460913899-515f1df34ada?q=80&w=1000&auto=format&fit=crop"
+    image: "/assets/char.jpg"
   }
 ];
 
 const LEADERSHIP = [
   {
-    name: "Stephnora Boniface",
+    name: "Mina Precy Macdonald",
     role: "Founder & Creative Director",
     bio: "A visionary leader with a decade of experience in Nollywood, guiding the agency's artistic direction and strategic growth. Her passion for authentic storytelling drives Altior's creative excellence.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop"
+    image: "/assets/ceo.jpg"
   },
   {
-    name: "Alex Okafor",
+    name: "Gideon Stephen",
     role: "Co-Founder & Head of Strategy",
-    bio: "The architect behind Altior's market positioning and talent development frameworks. Alex bridges the gap between artistic vision and commercial viability.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop"
+    bio: "The architect behind Altior's market positioning and talent development frameworks. Gideon bridges the gap between artistic vision and commercial viability.",
+    image: "/assets/cof.jpg"
   },
   {
-    name: "Chioma Uzor",
+    name: "Lollipop Gideon",
     role: "Head of Operations",
-    bio: "Ensures seamless execution across complex productions and talent placements. Chioma manages the heartbeat of Altior's daily rhythm with precision.",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop"
+    bio: "Ensures seamless execution across complex productions and talent placements. Lollipop manages the heartbeat of Altior's daily rhythm with precision.",
+    image: "/assets/coo.jpg"
   }
 ];
 
@@ -163,18 +163,18 @@ const TESTIMONIALS = [
   {
     id: 1,
     quote: "Altior doesn't just manage talent; they nurture vision. Their approach to storytelling is unparalleled in the global creative scape, blending cultural depth with modern execution.",
-    name: "Olawale J.",
+    name: "Kingsley S.",
     title: "Production Head",
-    company: "Cinewave Africa",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1000&auto=format&fit=crop"
+    company: "Mstudios Africa",
+    image: "/assets/emeka.jpg"
   },
   {
     id: 2,
     quote: "Working with the Altior team on our flagship campaign was a masterclass in strategy. They didn't just deliver a video; they built a movement around our brand's core values.",
-    name: "Sarah M.",
-    title: "Brand Director",
-    company: "Aurora Luxe",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop"
+    name: "Shalom Ernest",
+    title: "Founder",
+    company: "youth making impact foundation",
+    image: "/assets/shalom.jpg"
   },
   {
     id: 3,
@@ -182,7 +182,7 @@ const TESTIMONIALS = [
     name: "David E.",
     title: "Creative Lead",
     company: "Impact Studio",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1000&auto=format&fit=crop"
+    image: "/assets/talent8.jpg"
   }
 ];
 
@@ -212,9 +212,9 @@ const StickyFooterNav = ({ isVisible }: { isVisible: boolean }) => (
         <div className="bg-brand-black/80 backdrop-blur-xl border border-white/10 rounded-2xl md:rounded-full px-4 py-3 flex items-center justify-between shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
           <div className="hidden sm:flex items-center gap-3 pl-4">
             <div className="w-2 h-2 bg-brand-gold rounded-full animate-pulse" />
-            <span className="font-display font-black text-xs uppercase tracking-tighter">Altior</span>
+            <span className="font-display font-black text-xs uppercase tracking-tighter">Altior Creatives</span>
           </div>
-          
+
           <div className="flex gap-4 md:gap-8 items-center md:px-8 md:border-x border-white/10 px-2">
             {[
               { name: 'About', href: '#about' },
@@ -222,7 +222,7 @@ const StickyFooterNav = ({ isVisible }: { isVisible: boolean }) => (
               { name: 'Services', href: '#services' },
               { name: 'Journal', href: '#journal' },
             ].map((item) => (
-              <a 
+              <a
                 key={item.name}
                 href={item.href}
                 onClick={() => analytics.trackEvent('sticky_nav_click', { section: item.name })}
@@ -233,7 +233,7 @@ const StickyFooterNav = ({ isVisible }: { isVisible: boolean }) => (
             ))}
           </div>
 
-          <a 
+          <a
             href="#contact"
             onClick={() => analytics.trackEvent('sticky_nav_contact_click')}
             className="group bg-brand-gold text-black px-5 py-2.5 rounded-xl md:rounded-full text-[9px] uppercase tracking-widest font-black flex items-center gap-2 hover:bg-white transition-all duration-300"
@@ -326,8 +326,8 @@ const TestimonialSlider = ({ testimonials }: { testimonials: typeof TESTIMONIALS
 
               <div className="relative aspect-square hidden lg:block">
                 <div className="absolute inset-0 border border-brand-gold/20 translate-x-4 -translate-y-4" />
-                <img 
-                  src={testimonials[current].image} 
+                <img
+                  src={testimonials[current].image}
                   alt={testimonials[current].name}
                   className="w-full h-full object-cover grayscale brightness-75"
                 />
@@ -340,7 +340,7 @@ const TestimonialSlider = ({ testimonials }: { testimonials: typeof TESTIMONIALS
       {/* Navigation */}
       <div className="mt-16 flex items-center justify-between">
         <div className="flex gap-4">
-          <motion.button 
+          <motion.button
             whileHover={{ scale: 1.1, backgroundColor: '#D4AF37', color: '#000' }}
             whileTap={{ scale: 0.9 }}
             onClick={prev}
@@ -348,7 +348,7 @@ const TestimonialSlider = ({ testimonials }: { testimonials: typeof TESTIMONIALS
           >
             <ChevronLeft size={24} />
           </motion.button>
-          <motion.button 
+          <motion.button
             whileHover={{ scale: 1.1, backgroundColor: '#D4AF37', color: '#000' }}
             whileTap={{ scale: 0.9 }}
             onClick={next}
@@ -360,7 +360,7 @@ const TestimonialSlider = ({ testimonials }: { testimonials: typeof TESTIMONIALS
 
         <div className="flex gap-2">
           {testimonials.map((_, i) => (
-            <button 
+            <button
               key={i}
               onClick={() => {
                 setDirection(i > current ? 1 : -1);
@@ -381,9 +381,47 @@ export default function App() {
   const [selectedPost, setSelectedPost] = useState<typeof JOURNAL_POSTS[0] | null>(null);
   const [showStickyNav, setShowStickyNav] = useState(false);
   const [expandedTalent, setExpandedTalent] = useState<number | null>(null);
-  
+
+  // Contact form state
+  const [formData, setFormData] = useState({ name: '', email: '', interest: 'Talent Management', message: '' });
+  const [formStatus, setFormStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const handleFormChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleFormSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!formData.name || !formData.email) return;
+    setFormStatus('loading');
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: '77abad32-cd80-460a-983d-e2d4858f9ef1',
+          to: 'booking@altiorcreatives.com',
+          subject: `New Inquiry: ${formData.interest} from ${formData.name}`,
+          name: formData.name,
+          email: formData.email,
+          interest: formData.interest,
+          message: formData.message || '(no message provided)',
+        }),
+      });
+      const json = await res.json();
+      if (json.success) {
+        setFormStatus('success');
+        setFormData({ name: '', email: '', interest: 'Talent Management', message: '' });
+      } else {
+        setFormStatus('error');
+      }
+    } catch {
+      setFormStatus('error');
+    }
+  };
+
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  
+
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({
@@ -413,7 +451,7 @@ export default function App() {
       document.body.style.overflow = 'unset';
     }
   }, [selectedPost]);
-  
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"]
@@ -433,16 +471,16 @@ export default function App() {
 
   return (
     <div ref={containerRef} className="relative bg-brand-black min-h-screen selection:bg-brand-gold selection:text-black font-sans overflow-x-hidden">
-      
+
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 px-6 py-8 md:px-12 flex justify-between items-center bg-gradient-to-b from-brand-black/80 to-transparent backdrop-blur-sm pointer-events-none">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           className="pointer-events-auto"
         >
           <span className="font-display text-2xl font-black tracking-tighter uppercase">
-            Altior<span className="text-brand-gold">.</span>
+            Altior<span className="text-brand-gold">Creatives.</span>
           </span>
         </motion.div>
 
@@ -458,7 +496,7 @@ export default function App() {
               {item}
             </motion.a>
           ))}
-          <motion.button 
+          <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-6 py-2 border border-brand-gold/30 text-brand-gold text-[10px] uppercase tracking-widest font-bold hover:bg-brand-gold hover:text-black transition-all duration-300"
@@ -467,7 +505,7 @@ export default function App() {
           </motion.button>
         </div>
 
-        <button 
+        <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden pointer-events-auto text-white p-2"
         >
@@ -485,9 +523,9 @@ export default function App() {
             className="fixed inset-0 z-40 bg-brand-black flex flex-col items-center justify-center gap-8 md:hidden"
           >
             {['About', 'Talents', 'Services', 'Vision', 'Executive', 'Journal', 'Contact'].map((item) => (
-              <a 
+              <a
                 key={item}
-                href={`#${item.toLowerCase()}`} 
+                href={`#${item.toLowerCase()}`}
                 onClick={() => setIsMenuOpen(false)}
                 className="text-3xl font-display uppercase tracking-widest"
               >
@@ -500,17 +538,17 @@ export default function App() {
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <motion.div 
-          style={{ 
-            opacity: heroOpacity, 
+        <motion.div
+          style={{
+            opacity: heroOpacity,
             scale: heroScale,
             x: mousePosition.x * -1.5,
             y: mousePosition.y * -1.5
           }}
           className="absolute inset-0 z-0"
         >
-          <img 
-            src="https://images.unsplash.com/photo-1534353436294-0dbd4bdac845?q=80&w=2000&auto=format&fit=crop"
+          <img
+            src="/assets/hero-bg.jpg"
             alt="Hero Background"
             className="w-full h-full object-cover brightness-[0.3] contrast-[1.2] scale-110"
             referrerPolicy="no-referrer"
@@ -519,24 +557,24 @@ export default function App() {
 
         {/* Animated Background Gradients */}
         <div className="absolute inset-0 pointer-events-none">
-          <motion.div 
-            style={{ 
+          <motion.div
+            style={{
               x: mousePosition.x * 3,
               y: mousePosition.y * 3
             }}
-            animate={{ 
+            animate={{
               opacity: [0.1, 0.2, 0.1],
               scale: [1, 1.2, 1]
             }}
             transition={{ duration: 10, repeat: Infinity }}
             className="absolute -top-[20%] -left-[10%] w-[60%] h-[60%] bg-brand-gold/20 blur-[150px] rounded-full"
           />
-          <motion.div 
-            style={{ 
+          <motion.div
+            style={{
               x: mousePosition.x * -4,
               y: mousePosition.y * -4
             }}
-            animate={{ 
+            animate={{
               opacity: [0.1, 0.15, 0.1],
               scale: [1.2, 1, 1.2]
             }}
@@ -558,9 +596,9 @@ export default function App() {
             </span>
             <div className="h-[1px] w-8 bg-brand-gold/50" />
           </motion.div>
-          
+
           <div className="overflow-hidden mb-12">
-            <motion.h1 
+            <motion.h1
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
@@ -568,7 +606,7 @@ export default function App() {
             >
               <div className="flex flex-wrap justify-center gap-x-8">
                 {titleText.split(" ").map((word, i) => (
-                  <motion.span 
+                  <motion.span
                     key={i}
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -611,7 +649,7 @@ export default function App() {
             transition={{ duration: 1, delay: 2.2 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-6"
           >
-            <motion.button 
+            <motion.button
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
               onClick={() => analytics.trackEvent('hero_cta_click', { button: 'journey' })}
@@ -621,8 +659,8 @@ export default function App() {
               <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-2 transition-transform" />
               <div className="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500" />
             </motion.button>
-            
-            <motion.button 
+
+            <motion.button
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
               onClick={() => analytics.trackEvent('hero_cta_click', { button: 'watch_reel' })}
@@ -634,13 +672,13 @@ export default function App() {
         </div>
 
         {/* Scroll Indicator */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2, duration: 1 }}
           className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-6 text-white/30"
         >
-          <motion.span 
+          <motion.span
             animate={{ opacity: [0.3, 0.6, 0.3] }}
             transition={{ duration: 3, repeat: Infinity }}
             className="text-[9px] uppercase tracking-[0.6em] font-semibold"
@@ -648,14 +686,14 @@ export default function App() {
             Scroll
           </motion.span>
           <div className="relative h-20 w-[1px] bg-white/5 overflow-hidden">
-            <motion.div 
-              animate={{ 
+            <motion.div
+              animate={{
                 y: [-80, 80],
                 opacity: [0, 1, 0]
               }}
-              transition={{ 
-                duration: 2.5, 
-                repeat: Infinity, 
+              transition={{
+                duration: 2.5,
+                repeat: Infinity,
                 ease: "circIn"
               }}
               className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-brand-gold/80 to-transparent"
@@ -674,10 +712,10 @@ export default function App() {
               viewport={{ once: true }}
               transition={{ duration: 1 }}
             >
-              <SectionHeader 
-                number="01" 
-                subtitle="About Us" 
-                title="Creators at the Core." 
+              <SectionHeader
+                number="01"
+                subtitle="About Us"
+                title="Creators at the Core."
               />
               <p className="text-xl md:text-2xl text-white/80 leading-relaxed font-light mb-8 italic">
                 "We are a forward-thinking creative agency and talent management company dedicated to delivering high-impact visual and brand experiences."
@@ -685,7 +723,7 @@ export default function App() {
               <p className="text-white/50 leading-relaxed mb-12 max-w-lg">
                 Operating at the intersection of creativity and strategy, we provide end-to-end solutions across talent representation, advertising production, and brand storytelling.
               </p>
-              
+
               <div className="grid grid-cols-2 gap-8">
                 <div>
                   <div className="text-4xl font-display font-bold text-brand-gold mb-2 tracking-tighter">GLOBAL</div>
@@ -706,8 +744,8 @@ export default function App() {
               className="relative aspect-[4/5] perspective-1000 group"
             >
               <div className="absolute -inset-4 border border-brand-gold/20 -z-10 translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-700" />
-              <img 
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1000&auto=format&fit=crop" // Professional creative team
+              <img
+                src="/assets/team.jpg" // Professional creative team
                 className="w-full h-full object-cover brightness-75 grayscale hover:grayscale-0 transition-all duration-700"
                 alt="Altior Studio"
                 referrerPolicy="no-referrer"
@@ -731,10 +769,10 @@ export default function App() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <SectionHeader 
-              number="02" 
-              subtitle="The Roster" 
-              title="Exceptional Talent." 
+            <SectionHeader
+              number="02"
+              subtitle="The Roster"
+              title="Exceptional Talent."
             />
           </motion.div>
 
@@ -745,10 +783,10 @@ export default function App() {
                 initial={{ opacity: 0, y: 60, scale: 0.95 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true, margin: "-100px" }}
-                transition={{ 
-                  duration: 1, 
+                transition={{
+                  duration: 1,
                   delay: idx * 0.1,
-                  ease: [0.215, 0.61, 0.355, 1] 
+                  ease: [0.215, 0.61, 0.355, 1]
                 }}
                 className="flex flex-col gap-8 group cursor-pointer"
                 onClick={() => {
@@ -758,11 +796,11 @@ export default function App() {
                 }}
               >
                 <div className="relative aspect-[3/4] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl">
-                  <motion.img 
+                  <motion.img
                     initial={{ scale: 1.2 }}
                     whileInView={{ scale: 1 }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
-                    src={talent.image} 
+                    src={talent.image}
                     alt={talent.name}
                     className="w-full h-full object-cover brightness-90 group-hover:scale-105 transition-transform duration-700"
                     referrerPolicy="no-referrer"
@@ -778,9 +816,9 @@ export default function App() {
                     </motion.div>
                   </div>
                 </div>
-                
+
                 <div className="space-y-6">
-                  <motion.p 
+                  <motion.p
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 0.6 + idx * 0.1 }}
@@ -788,7 +826,7 @@ export default function App() {
                   >
                     {talent.bio}
                   </motion.p>
-                  
+
                   <motion.div
                     initial={false}
                     animate={{ height: expandedTalent === idx ? 'auto' : 0, opacity: expandedTalent === idx ? 1 : 0 }}
@@ -802,7 +840,7 @@ export default function App() {
                     </div>
                   </motion.div>
 
-                  <motion.p 
+                  <motion.p
                     initial={{ opacity: 0, x: -10 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.7 + idx * 0.1 }}
@@ -812,7 +850,7 @@ export default function App() {
                   </motion.p>
 
                   <div className="flex items-center gap-6">
-                    <motion.button 
+                    <motion.button
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       transition={{ delay: 0.8 + idx * 0.1 }}
@@ -844,10 +882,10 @@ export default function App() {
       {/* Services Grid */}
       <section id="services" className="py-32 px-6 md:px-12 bg-brand-gray/30">
         <div className="container mx-auto">
-          <SectionHeader 
-            number="03" 
-            subtitle="Our Services" 
-            title="Comprehensive Solutions." 
+          <SectionHeader
+            number="03"
+            subtitle="Our Services"
+            title="Comprehensive Solutions."
           />
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -861,7 +899,7 @@ export default function App() {
                 className="group relative bg-brand-black border border-white/5 hover:border-brand-gold/30 transition-all duration-500 overflow-hidden"
               >
                 <div className="h-64 overflow-hidden relative">
-                   <img 
+                  <img
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover brightness-50 group-hover:scale-110 transition-transform duration-700"
@@ -872,15 +910,15 @@ export default function App() {
                     {service.icon}
                   </div>
                 </div>
-                
+
                 <div className="p-8">
                   <h3 className="text-2xl font-display font-bold mb-4 uppercase tracking-tight group-hover:text-brand-gold transition-colors">{service.title}</h3>
                   <p className="text-white/40 mb-6 text-sm leading-relaxed">{service.description}</p>
-                  
+
                   <div className="space-y-3">
                     {service.tasks.map((task, tidx) => (
-                      <div 
-                        key={tidx} 
+                      <div
+                        key={tidx}
                         className="flex items-center gap-3 text-[10px] uppercase tracking-widest text-white/60 cursor-pointer hover:text-brand-gold transition-colors"
                         onClick={() => analytics.trackEvent('service_task_click', { service: service.title, task })}
                       >
@@ -903,12 +941,12 @@ export default function App() {
         <div className="absolute top-0 right-0 w-1/3 h-full bg-brand-gold/5 blur-[120px] -z-10" />
         <div className="container mx-auto">
           <div className="max-w-4xl">
-            <SectionHeader 
-              number="04" 
-              subtitle="The Blueprint" 
-              title="Vision & Mission." 
+            <SectionHeader
+              number="04"
+              subtitle="The Blueprint"
+              title="Vision & Mission."
             />
-            
+
             <div className="grid md:grid-cols-2 gap-20">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -952,10 +990,10 @@ export default function App() {
       {/* Executive Leadership Section */}
       <section id="executive" className="py-32 px-6 md:px-12 bg-brand-gray/20">
         <div className="container mx-auto">
-          <SectionHeader 
-            number="05" 
-            subtitle="Executive Team" 
-            title="The Visionaries." 
+          <SectionHeader
+            number="05"
+            subtitle="Executive Team"
+            title="The Visionaries."
           />
 
           <div className="grid md:grid-cols-3 gap-12">
@@ -969,8 +1007,8 @@ export default function App() {
                 className="group p-8 border border-white/5 bg-brand-black/40 backdrop-blur-sm hover:border-brand-gold/30 transition-all duration-500"
               >
                 <div className="aspect-square mb-8 overflow-hidden bg-brand-gray">
-                  <img 
-                    src={leader.image} 
+                  <img
+                    src={leader.image}
                     alt={leader.name}
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                   />
@@ -995,13 +1033,13 @@ export default function App() {
       {/* Core Values - Horizontal Scroll feel */}
       <section className="py-32 bg-brand-black border-y border-white/5">
         <div className="px-6 md:px-12 mb-16">
-          <SectionHeader 
-            number="06" 
-            subtitle="The DNA" 
-            title="Core Values." 
+          <SectionHeader
+            number="06"
+            subtitle="The DNA"
+            title="Core Values."
           />
         </div>
-        
+
         <div className="flex gap-4 px-6 md:px-12 overflow-x-auto no-scrollbar pb-12">
           {VALUES.map((v, i) => (
             <motion.div
@@ -1026,15 +1064,15 @@ export default function App() {
       {/* Testimonials Slider Section */}
       <section id="testimonials" className="py-32 px-6 md:px-12 bg-brand-gray/10 relative overflow-hidden">
         <div className="container mx-auto">
-          <SectionHeader 
-            number="07" 
-            subtitle="Voices" 
-            title="What they say." 
+          <SectionHeader
+            number="07"
+            subtitle="Voices"
+            title="What they say."
           />
 
           <TestimonialSlider testimonials={TESTIMONIALS} />
         </div>
-        
+
         {/* Decorative Quote Mark */}
         <div className="absolute top-20 right-20 text-white/5 pointer-events-none hidden lg:block">
           <Quote size={400} strokeWidth={0.5} />
@@ -1045,12 +1083,12 @@ export default function App() {
       <section id="journal" className="py-32 px-6 md:px-12 bg-brand-black overflow-hidden">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
-            <SectionHeader 
-              number="08" 
-              subtitle="Inside Altior" 
-              title="The Journal." 
+            <SectionHeader
+              number="08"
+              subtitle="Inside Altior"
+              title="The Journal."
             />
-            <motion.button 
+            <motion.button
               whileHover={{ x: 10 }}
               className="flex items-center gap-4 text-brand-gold text-[10px] uppercase tracking-widest font-black mb-20 md:mb-0"
             >
@@ -1071,8 +1109,8 @@ export default function App() {
               >
                 <div className="relative aspect-[16/10] overflow-hidden mb-8">
                   <div className="absolute inset-0 bg-brand-gold/20 scale-105 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
-                  <motion.img 
-                    src={post.image} 
+                  <motion.img
+                    src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110"
                   />
@@ -1082,7 +1120,7 @@ export default function App() {
                     </span>
                   </div>
                 </div>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-center gap-4 text-[9px] uppercase tracking-[0.2em] text-white/40">
                     <span className="flex items-center gap-1.5"><Calendar size={10} /> {post.date}</span>
@@ -1113,14 +1151,14 @@ export default function App() {
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-12 overflow-hidden"
           >
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setSelectedPost(null)}
               className="absolute inset-0 bg-brand-black/95 backdrop-blur-xl"
             />
-            
+
             <motion.div
               layoutId={selectedPost.id}
               initial={{ opacity: 0, y: 50, scale: 0.9 }}
@@ -1128,7 +1166,7 @@ export default function App() {
               exit={{ opacity: 0, y: 50, scale: 0.9 }}
               className="relative w-full max-w-5xl max-h-full bg-brand-gray border border-white/10 overflow-y-auto no-scrollbar shadow-2xl"
             >
-              <button 
+              <button
                 onClick={() => setSelectedPost(null)}
                 className="absolute top-8 right-8 z-50 p-4 bg-brand-black/50 hover:bg-brand-gold hover:text-black rounded-full transition-all text-white"
               >
@@ -1136,8 +1174,8 @@ export default function App() {
               </button>
 
               <div className="aspect-[21/9] w-full overflow-hidden">
-                <img 
-                  src={selectedPost.image} 
+                <img
+                  src={selectedPost.image}
                   alt={selectedPost.title}
                   className="w-full h-full object-cover brightness-75"
                 />
@@ -1174,16 +1212,16 @@ export default function App() {
                       </button>
                       <div className="flex gap-6 items-center">
                         <span className="text-[8px] uppercase tracking-widest text-white/20 font-bold">Share on:</span>
-                        <motion.a 
-                          href="#" 
+                        <motion.a
+                          href="#"
                           whileHover={{ scale: 1.2, color: '#D4AF37' }}
                           className="text-white/40 transition-colors"
                           aria-label="Share on X (Twitter)"
                         >
                           <Twitter size={14} />
                         </motion.a>
-                        <motion.a 
-                          href="#" 
+                        <motion.a
+                          href="#"
                           whileHover={{ scale: 1.2, color: '#D4AF37' }}
                           className="text-white/40 transition-colors"
                           aria-label="Share on LinkedIn"
@@ -1209,7 +1247,7 @@ export default function App() {
               <p className="text-white/50 text-xl font-light mb-12">
                 We're always looking for exceptional talent and strategic partners. Let's create something meaningful together.
               </p>
-              
+
               <div className="flex gap-8 items-center">
                 <a href="#" className="p-4 rounded-full border border-white/10 hover:border-brand-gold hover:text-brand-gold transition-all"><Instagram size={20} /></a>
                 <a href="#" className="p-4 rounded-full border border-white/10 hover:border-brand-gold hover:text-brand-gold transition-all"><Linkedin size={20} /></a>
@@ -1219,27 +1257,93 @@ export default function App() {
 
             <div className="w-full md:w-96 p-10 bg-brand-gray border border-white/5">
               <h3 className="text-xl font-display font-bold uppercase mb-8 tracking-widest text-brand-gold">Inquire</h3>
-              <form className="space-y-6">
-                <div>
-                  <label className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/40 block mb-2">FullName</label>
-                  <input type="text" className="w-full bg-transparent border-b border-white/20 focus:border-brand-gold outline-none py-2 transition-colors" />
-                </div>
-                <div>
-                  <label className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/40 block mb-2">EmailAddress</label>
-                  <input type="email" className="w-full bg-transparent border-b border-white/20 focus:border-brand-gold outline-none py-2 transition-colors" />
-                </div>
-                <div>
-                  <label className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/40 block mb-2">Interest</label>
-                  <select className="w-full bg-transparent border-b border-white/20 focus:border-brand-gold outline-none py-2 transition-colors appearance-none">
-                    <option className="bg-brand-gray">Talent Management</option>
-                    <option className="bg-brand-gray">Creative/Ads</option>
-                    <option className="bg-brand-gray">Production</option>
-                  </select>
-                </div>
-                <button className="w-full py-4 bg-brand-gold text-black uppercase tracking-widest font-black text-xs hover:bg-white transition-colors">
-                  Send Message
-                </button>
-              </form>
+
+              {formStatus === 'success' ? (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="py-12 text-center"
+                >
+                  <div className="w-16 h-16 rounded-full bg-brand-gold/20 border border-brand-gold flex items-center justify-center mx-auto mb-6">
+                    <svg className="w-8 h-8 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  </div>
+                  <p className="text-white font-display font-bold uppercase tracking-widest mb-2">Message Sent!</p>
+                  <p className="text-white/40 text-xs">We'll be in touch at <span className="text-brand-gold">booking@altiorcreatives.com</span></p>
+                  <button onClick={() => setFormStatus('idle')} className="mt-8 text-[10px] uppercase tracking-widest text-white/30 hover:text-brand-gold transition-colors">Send Another</button>
+                </motion.div>
+              ) : (
+                <form onSubmit={handleFormSubmit} className="space-y-6">
+                  <div>
+                    <label className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/40 block mb-2">Full Name *</label>
+                    <input
+                      id="contact-name"
+                      type="text"
+                      name="name"
+                      required
+                      value={formData.name}
+                      onChange={handleFormChange}
+                      placeholder="Your full name"
+                      className="w-full bg-transparent border-b border-white/20 focus:border-brand-gold outline-none py-2 transition-colors placeholder:text-white/20 text-sm"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/40 block mb-2">Email Address *</label>
+                    <input
+                      id="contact-email"
+                      type="email"
+                      name="email"
+                      required
+                      value={formData.email}
+                      onChange={handleFormChange}
+                      placeholder="your@email.com"
+                      className="w-full bg-transparent border-b border-white/20 focus:border-brand-gold outline-none py-2 transition-colors placeholder:text-white/20 text-sm"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/40 block mb-2">Interest</label>
+                    <select
+                      id="contact-interest"
+                      name="interest"
+                      value={formData.interest}
+                      onChange={handleFormChange}
+                      className="w-full bg-brand-gray border-b border-white/20 focus:border-brand-gold outline-none py-2 transition-colors appearance-none text-sm cursor-pointer"
+                    >
+                      <option className="bg-brand-gray">Talent Management</option>
+                      <option className="bg-brand-gray">Creative / Advertising</option>
+                      <option className="bg-brand-gray">Production Services</option>
+                      <option className="bg-brand-gray">Partnership</option>
+                      <option className="bg-brand-gray">General Inquiry</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/40 block mb-2">Message</label>
+                    <textarea
+                      id="contact-message"
+                      name="message"
+                      rows={3}
+                      value={formData.message}
+                      onChange={handleFormChange}
+                      placeholder="Tell us about your project or inquiry..."
+                      className="w-full bg-transparent border-b border-white/20 focus:border-brand-gold outline-none py-2 transition-colors placeholder:text-white/20 text-sm resize-none"
+                    />
+                  </div>
+
+                  {formStatus === 'error' && (
+                    <p className="text-red-400 text-[10px] uppercase tracking-widest">Something went wrong. Please try again.</p>
+                  )}
+
+                  <button
+                    id="contact-submit"
+                    type="submit"
+                    disabled={formStatus === 'loading'}
+                    className="w-full py-4 bg-brand-gold text-black uppercase tracking-widest font-black text-xs hover:bg-white transition-colors disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-3"
+                  >
+                    {formStatus === 'loading' ? (
+                      <><span className="inline-block w-4 h-4 border-2 border-black/30 border-t-black rounded-full animate-spin" /> Sending...</>
+                    ) : 'Send Message'}
+                  </button>
+                </form>
+              )}
             </div>
           </div>
 
