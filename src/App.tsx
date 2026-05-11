@@ -236,7 +236,7 @@ const StickyFooterNav = ({ isVisible }: { isVisible: boolean }) => (
           <a
             href="#contact"
             onClick={() => analytics.trackEvent('sticky_nav_contact_click')}
-            className="group bg-brand-gold text-white px-5 py-2.5 rounded-xl md:rounded-full text-[9px] uppercase tracking-widest font-black flex items-center gap-2 hover:bg-white transition-all duration-300"
+            className="group bg-brand-gold text-black px-5 py-2.5 rounded-xl md:rounded-full text-[9px] uppercase tracking-widest font-black flex items-center gap-2 hover:bg-white transition-all duration-300"
           >
             <span className="hidden xs:inline">Contact Us</span>
             <MessageSquare size={12} className="group-hover:rotate-12 transition-transform" />
@@ -470,7 +470,7 @@ export default function App() {
   const heroScale = useTransform(scrollYProgress, [0, 0.2], [1, 1.1]);
 
   return (
-    <div ref={containerRef} className="relative bg-brand-black min-h-screen selection:bg-brand-gold selection:text-white font-sans overflow-x-hidden">
+    <div ref={containerRef} className="relative bg-brand-black min-h-screen selection:bg-brand-gold selection:text-black font-sans overflow-x-hidden">
 
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 px-6 py-8 md:px-12 flex justify-between items-center bg-gradient-to-b from-brand-black/80 to-transparent backdrop-blur-sm pointer-events-none">
@@ -497,7 +497,7 @@ export default function App() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-6 py-2 border border-brand-gold/30 text-brand-gold text-[10px] uppercase tracking-widest font-bold hover:bg-brand-gold hover:text-white transition-all duration-300"
+            className="px-6 py-2 border border-brand-gold/30 text-brand-gold text-[10px] uppercase tracking-widest font-bold hover:bg-brand-gold hover:text-black transition-all duration-300"
           >
             Work With Us
           </motion.button>
@@ -651,7 +651,7 @@ export default function App() {
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
               onClick={() => analytics.trackEvent('hero_cta_click', { button: 'journey' })}
-              className="group relative px-10 py-5 bg-brand-gold text-white uppercase tracking-[0.2em] text-[11px] font-black flex items-center gap-4 overflow-hidden"
+              className="group relative px-10 py-5 bg-brand-gold text-black uppercase tracking-[0.2em] text-[11px] font-black flex items-center gap-4 overflow-hidden"
             >
               <span className="relative z-10">Start Your Journey</span>
               <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-2 transition-transform" />
@@ -749,7 +749,7 @@ export default function App() {
                 referrerPolicy="no-referrer"
               />
               <div className="absolute bottom-8 right-8 bg-brand-gold p-8 max-w-[200px]">
-                <span className="text-white font-display font-black text-xs uppercase tracking-widest">
+                <span className="text-black font-display font-black text-xs uppercase tracking-widest">
                   Nigeria's Leading Talent Powerhouse
                 </span>
               </div>
@@ -904,7 +904,7 @@ export default function App() {
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-black to-transparent" />
-                  <div className="absolute top-6 left-6 p-4 bg-brand-gold text-white rounded-sm shadow-xl transform -rotate-12 group-hover:rotate-3 group-hover:scale-110 transition-transform duration-500 ease-out">
+                  <div className="absolute top-6 left-6 p-4 bg-brand-gold text-black rounded-sm shadow-xl transform -rotate-12 group-hover:rotate-3 group-hover:scale-110 transition-transform duration-500 ease-out">
                     {service.icon}
                   </div>
                 </div>
@@ -1048,12 +1048,12 @@ export default function App() {
               transition={{ delay: i * 0.1 }}
               className="flex-shrink-0 w-80 bg-brand-gray p-10 border border-white/5 hover:bg-brand-gold group transition-all duration-500"
             >
-              <div className="text-6xl font-display font-black text-white/5 group-hover:text-white/10 transition-colors mb-4">{v.rank}</div>
+              <div className="text-6xl font-display font-black text-white/5 group-hover:text-black/10 transition-colors mb-4">{v.rank}</div>
               <div className="w-12 h-12 bg-brand-gold/10 group-hover:bg-black/10 flex items-center justify-center p-3 mb-6 transition-colors">
                 {v.icon}
               </div>
-              <h3 className="text-2xl font-display font-bold mb-4 uppercase group-hover:text-white transition-colors">{v.title}</h3>
-              <p className="text-white/40 text-sm leading-relaxed group-hover:text-white/60 transition-colors">{v.desc}</p>
+              <h3 className="text-2xl font-display font-bold mb-4 uppercase group-hover:text-black transition-colors">{v.title}</h3>
+              <p className="text-white/40 text-sm leading-relaxed group-hover:text-black/60 transition-colors">{v.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -1166,7 +1166,7 @@ export default function App() {
             >
               <button
                 onClick={() => setSelectedPost(null)}
-                className="absolute top-8 right-8 z-50 p-4 bg-brand-black/50 hover:bg-brand-gold hover:text-white rounded-full transition-all text-white"
+                className="absolute top-8 right-8 z-50 p-4 bg-brand-black/50 hover:bg-brand-gold hover:text-black rounded-full transition-all text-white"
               >
                 <X size={20} />
               </button>
@@ -1197,7 +1197,7 @@ export default function App() {
 
                   <div className="mt-20 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-brand-gold rounded-full flex items-center justify-center font-display font-black text-white">A.</div>
+                      <div className="w-12 h-12 bg-brand-gold rounded-full flex items-center justify-center font-display font-black text-black">A.</div>
                       <div>
                         <div className="text-xs uppercase tracking-widest font-black">Altior Editorial</div>
                         <div className="text-[10px] text-white/40 uppercase tracking-widest">May 2026</div>
@@ -1205,7 +1205,7 @@ export default function App() {
                     </div>
 
                     <div className="flex flex-col items-center md:items-end gap-4">
-                      <button className="px-8 py-3 bg-brand-gold text-white uppercase tracking-widest font-black text-[10px] hover:bg-white transition-colors w-full md:w-auto">
+                      <button className="px-8 py-3 bg-brand-gold text-black uppercase tracking-widest font-black text-[10px] hover:bg-white transition-colors w-full md:w-auto">
                         Share Insight
                       </button>
                       <div className="flex gap-6 items-center">
@@ -1334,7 +1334,7 @@ export default function App() {
                     id="contact-submit"
                     type="submit"
                     disabled={formStatus === 'loading'}
-                    className="w-full py-4 bg-brand-gold text-white uppercase tracking-widest font-black text-xs hover:bg-white transition-colors disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-3"
+                    className="w-full py-4 bg-brand-gold text-black uppercase tracking-widest font-black text-xs hover:bg-white transition-colors disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-3"
                   >
                     {formStatus === 'loading' ? (
                       <><span className="inline-block w-4 h-4 border-2 border-black/30 border-t-black rounded-full animate-spin" /> Sending...</>
