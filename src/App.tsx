@@ -212,7 +212,7 @@ const StickyFooterNav = ({ isVisible }: { isVisible: boolean }) => (
         <div className="bg-brand-black/80 backdrop-blur-xl border border-white/10 rounded-2xl md:rounded-full px-4 py-3 flex items-center justify-between shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
           <div className="hidden sm:flex items-center gap-3 pl-4">
             <div className="w-2 h-2 bg-brand-gold rounded-full animate-pulse" />
-            <span className="font-display font-black text-xs uppercase tracking-tighter">Altior Creatives</span>
+            <img src="/assets/logo.png" alt="Altior Creatives" className="h-5 w-auto rounded-sm" />
           </div>
 
           <div className="flex gap-4 md:gap-8 items-center md:px-8 md:border-x border-white/10 px-2">
@@ -479,9 +479,7 @@ export default function App() {
           animate={{ opacity: 1, x: 0 }}
           className="pointer-events-auto"
         >
-          <span className="font-display text-2xl font-black tracking-tighter uppercase">
-            Altior<span className="text-brand-gold">Creatives.</span>
-          </span>
+          <img src="/assets/logo.png" alt="Altior Creatives" className="h-10 md:h-12 w-auto" />
         </motion.div>
 
         <div className="hidden md:flex gap-12 pointer-events-auto items-center">
@@ -1348,10 +1346,8 @@ export default function App() {
           </div>
 
           <div className="flex flex-col md:flex-row justify-between items-center gap-8 border-t border-white/5 pt-12">
-            <div className="font-display text-lg font-black tracking-tighter uppercase">
-              Altior<span className="text-brand-gold">.</span>
-            </div>
-            <div className="text-[10px] uppercase tracking-[0.3em] text-white/30">
+            <img src="/assets/logo.png" alt="Altior Creatives" className="h-12 md:h-16 w-auto" />
+            <div className="text-[10px] uppercase tracking-[0.3em] text-white/30 text-center md:text-left">
               © 2026 Altior Creatives & Entertainment. Built for Nigeria. Driven Globally.
             </div>
             <div className="flex gap-8 text-[10px] uppercase tracking-[0.2em] font-bold text-white/40">
